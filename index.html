@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+  <div class="row-fluid">
+    <div id="center" class="centering">
+      <div id="topLeft" class="col-xs-6 game-button top-left-button"></div>
+      <div id="topRight" class="col-xs-6 game-button top-right-button"></div>
+      <div id="bottomLeft" class="col-xs-6 game-button bottom-left-button"></div>
+      <div id="bottomRight" class="col-xs-6 game-button bottom-right-button"></div>
+      <div class="game-controls">
+        <div class="col-xs-12 text-center" style="height: 50%;padding-top: 30px;">
+          <h2>Simon</h2>
+        </div>
+        <div class="col-xs-12" style="height: 30%">
+          <div class="col-xs-12" style="height: 70%;">
+            <div class="col-xs-5 no-padding">
+              <div id="controlDisplay" class="control-display no-padding text-center">
+                <span id="displayOutput" class="display-output">--</span>
+              </div>
+            </div>
+            <div class="col-xs-3 no-padding">
+              <div id="startButton" class="control-button start-button"></div>
+            </div>
+            <div class="col-xs-4 no-padding">
+              <div id="strictButtonState" class="strict-button-state"></div>
+              <div id="strictButton" class="control-button strict-button"></div>
+            </div>
+          </div>
+          <div class="col-xs-12" style="height: 30%;">
+            <div class="col-xs-5" style="padding-left:8px">
+              <p>COUNT</p>
+            </div>
+            <div class="col-xs-3 no-padding text-center">
+              <p>START</p>
+            </div>
+            <div class="col-xs-4 no-padding text-center">
+              <p>STRICT</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12" style="height: 30%">
+          <div class="col-xs-4 no-padding text-right" style="margin-top: 10px;">
+            <p>OFF</p>
+          </div>
+          <div class="col-xs-4 no-padding text-center">
+            <div class="toggle-button">
+              <button></button>
+            </div>
+          </div>
+          <div class="col-xs-4 no-padding" style="margin-top: 10px;">
+            <p>ON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="topLeftAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+  <audio id="topRightAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" ></audio>
+  <audio id="bottomLeftAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+  <audio id="bottomRightAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+  <audio id="warningAudio" src="https://cdn.rawgit.com/mnjalale/MediaFiles/master/warning.mp3"></audio>
+  <audio id="completionAudio" src="https://cdn.rawgit.com/mnjalale/MediaFiles/master/applause.mp3"></audio>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='http://www.html5rocks.com/en/tutorials/webaudio/intro/js/buffer-loader.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

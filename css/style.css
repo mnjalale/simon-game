@@ -1,0 +1,197 @@
+html,body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.container-fluid{
+    height:100%;
+    width:100%;
+    display:table;
+    padding:0;
+    background-image: url('http://www.pixeden.com/media/k2/galleries/220/002-wood-melamine-subttle-pattern-background-pat.jpg');
+}
+
+.row-fluid{
+    height:100%;
+    display:table-cell;
+}
+
+.centering{
+    float:none;
+    margin: 0 auto;
+    width:450px;
+    height:450px;
+    margin-top:100px;
+    border-width: 20px;
+    border-style:solid;
+    border-color: #333333;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    position:relative;
+}
+
+.game-button{
+    height: 205px;
+    margin:0px;
+    padding:0px;
+    border-color:#333333;
+    border-width:10px;
+}
+
+.game-button-pointer{
+    cursor: pointer;
+}
+
+.top-left-button{
+    border-top-left-radius:100%;
+    background-color: #00A74A;
+    border-right-style:solid;
+    border-bottom-style:solid;
+}
+
+.top-right-button{
+    border-top-right-radius:100%;
+    background-color: #9F0F17;
+    border-left-style:solid;
+    border-bottom-style:solid;
+}
+
+.bottom-left-button{
+    border-bottom-left-radius:100%;
+    background-color: #CCA707;
+    border-right-style:solid;
+    border-top-style:solid;
+}
+
+.bottom-right-button{
+    border-bottom-right-radius:100%;
+    background-color: #094A8F;
+    border-left-style:solid;
+    border-top-style:solid;
+}
+
+.game-controls{
+    float:none;
+    margin: 0 auto;
+    width:240px;
+    height:240px;
+    border-width: 10px;
+    border-style:solid;
+    border-color: #333333;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top:85px;
+    left:85px;
+}
+
+h2{
+    font-size:40px;
+    font-family:cursive;
+}
+
+p{
+    font-size: 11px;
+}
+
+.control-button{
+    width:30px;
+    height:30px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border-width:5px;
+    border-style:outset;
+    border-color: #6F6D70;
+    margin:0 auto;
+}
+
+.control-button:hover{
+    cursor: pointer;
+}
+
+.control-button:active{
+    width:29px;
+    height:29px;
+}
+
+.strict-button-state{
+    width:10px;
+    height:10px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border-width:2px;
+    border-style:outset;
+    border-color: #333333;
+    margin:0 auto;
+    background-color: #32050C;
+    margin-bottom:3px;
+}
+
+.start-button{
+    background-color: red;
+    margin-top:12px;
+}
+
+.strict-button-on{
+    width:10px;
+
+}
+
+.strict-button{
+    background-color: yellow;
+}
+
+.control-display{
+    width:55px;
+    height: 40px;
+    background-color: #32050C;
+    color: red;
+    -webkit-border-radius:20%;
+    -moz-border-radius:20%;
+    border-radius:20%;
+    border-width: 5px;
+    border-style:solid;
+    border-color:#333333;
+    margin:0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.display-output{
+    font-size: 22px;
+    font-family: Consolas;
+}
+
+.no-padding{
+    padding:0px;
+}
+
+.toggle-button { background-color: red; margin: 5px 0; border-radius: 20px; border: 2px solid #D0D0D0; height: 24px; cursor: pointer; width: 50px; position: relative; display: inline-block; user-select: none; -webkit-user-select: none; -ms-user-select: none; -moz-user-select: none; }
+.toggle-button button { cursor: pointer; outline: 0; display:block; position: absolute; left: 0; top: 0; border-radius: 100%; width: 30px; height: 30px; background-color: white; float: left; margin: -3px 0 0 -3px; border: 2px solid #D0D0D0; transition: left 0.3s; }
+.toggle-button-selected { background-color: #83B152; border: 2px solid #7DA652; }
+.toggle-button-selected button { left: 26px; top: 0; margin: 0; border: none; width: 24px; height: 24px; box-shadow: 0 0 4px rgba(0,0,0,0.1); }
+
+@keyframes blink-animation {
+    from { opacity: 0.0; }
+    to { opacity: 1.0; }
+}
+@-webkit-keyframes blink-animation {
+    from { opacity: 0.0; }
+    to { opacity: 1.0; }
+}
+.blink {
+    animation-name: blink-animation;
+    -webkit-animation-name: blink-animation;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
